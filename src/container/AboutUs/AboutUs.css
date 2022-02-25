@@ -89,6 +89,10 @@
         z-index: 0;
         object-fit: contain;
     }
+
+    .app__aboutus-content_history img{
+        transform: scaleX(1);
+    }
     
 }
 
