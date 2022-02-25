@@ -14,3 +14,9 @@
 .app__header-content p{
     margin: 2rem 0;
 }
+
+@media screen and (max-width:768px){
+    .headtext_heading {
+        font-size: 70px;
+    }
+}

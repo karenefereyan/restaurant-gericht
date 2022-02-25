@@ -3,9 +3,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem 0 2rem;
+    width: 100%;
 
-    position: relative;
+    padding: 1rem 2rem 0 2rem;
+}
+
+.app__navbar ul li{
+    margin: 0 1rem;
 }
 
 .app__navbar-logo img{
@@ -13,12 +17,11 @@
 }
 
 .app__navbar-links{
-    list-style: none;
+    list-style-type :none;
     display: flex;
-}
-
-.app__navbar-links li{
-    margin: 0 .5rem;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
 }
 
 .app__navbar-login{
@@ -30,45 +33,42 @@
     height: 30px;
     width: 1px;
     margin: 0 1rem;
-} 
-
-.app__navbar-links li:hover{
-    color: var(--color-grey);
 }
 
 .app__navbar-smallscreens{
-    position: relative;
+    position:relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.app__navbar-smallscreens_open{
+    color: var(--color-white);
+    font-size: 27px;
     display: none;
 }
 
-.app__navbar-smallscreens .overlay__open{
-    font-size: 27px;
-    color: var(--color-white);
+.app__navbar-smallscreens_close{
+    position:absolute;
+    color: var(--color-golden);
+    top: 20px;
+    right: 10%;
 }
 
-.app__navbar-smallscreens_overlay{
+ .app__navbar-overlay{
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    min-height: 100vh;
+
+    height: 100vh;
+
     background: var(--color-black);
     transition: 0.5s ease;
     flex-direction: column;
     z-index: 999;
-    display: none; 
-}
+} 
 
-
-.app__navbar-smallscreens_overlay .overlay__close{
-    font-size: 27px;
-    color: var(--color-golden);
-    position: fixed;
-    top: 20px;
-    right: 5%;
-}
-
-.app__navbar-smallscreens-links{
+.app__navbar-smallscreens_links{
     list-style-type: none;
     display: flex;
     flex-direction: column;
@@ -76,32 +76,34 @@
     text-align: center;
 }
 
-
-.app__navbar-smallscreens ul li{
+.app__navbar-smallscreens_links li{
     color: var(--color-golden);
     font-family:var(--font-base);
-    margin: 1rem 0;
+    margin: 2rem 0;
    
 }
 
-@media screen and (max-width:800px){
-    .app__navbar-logo img{
-        width: 150px;
+@media screen and (max-width:900px){
+
+    .app__navbar-links{
+        display: none;
     }
 
-   .app__navbar-links{
-       display: none;
-   } 
-
-   .app__navbar-smallscreens{
-       display: flex;
-   }
-
-}
-
-@media screen and (max-width:700px){
     .app__navbar-login{
         display: none;
     }
+    
+    .app__navbar-smallscreens_open{
+        display: block;
+    }
+    
 }
+
+@media screen and (max-width:700px){
+    .app__navbar-logo img{
+        width: 150px;
+    }
+}
+
+
 
