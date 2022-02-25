@@ -67,4 +67,28 @@
     margin: 2rem 0;
 }
 
+@media screen and (max-width:1025px){
+    .app__aboutus-content{
+        display: flex;
+        flex-direction: column;
+
+        height: 100%;
+    }
+
+    .app__aboutus-content_knife img{
+        height: 750px;
+        padding: 4rem 0;
+    }
+}
+
+@media screen and (max-width:500px){
+      .app__aboutus-overlay img{
+        height: 350px;
+        width: 301px;
+    
+        z-index: 0;
+        object-fit: contain;
+    }
+    
+}
 
