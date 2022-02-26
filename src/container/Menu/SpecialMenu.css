@@ -1,0 +1,41 @@
+.app__specialmenu{
+    background: var(--color-black);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    flex-direction: column;
+}
+
+.app__specialmenu-intro{
+    text-align: center;
+}
+
+.app__specialmenu-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    margin-top: 6rem;
+}
+
+.specialmenu-content_heading{
+    color: var(--color-white);
+    font-family: var(--font-base);
+
+    font-size: 45px;
+    text-align: center;
+}
+
+.app__specialmenu-content_image{
+    margin: 0 2rem;
+}
+
+.app__specialmenu-content_image img{
+    height: 920px;
+    width: 650px;
+}
+
+.app__specialmenu-content_button{
+    margin-top: 2rem;
+}
