@@ -16,7 +16,7 @@ const SpecialMenu = () => (
 
       <div className='app__specialmenu-content'>
 
-            <div className='app__specialmenu-content_wines'>
+            <div className='app__specialmenu-content_drinksMenu'>
                 <h1 className='specialmenu-content_heading'>Wine & Beer</h1>
                 {
                   data.wines.map((wine) => (
@@ -29,7 +29,7 @@ const SpecialMenu = () => (
               <img src={images.menu} alt="" />
             </div>
 
-            <div className='app__specialmenu-content_cocktails'>
+            <div className='app__specialmenu-content_drinksMenu'>
                 <h1 className='specialmenu-content_heading'>Cocktails</h1>
                 {
                   data.cocktails.map((cocktail) => (

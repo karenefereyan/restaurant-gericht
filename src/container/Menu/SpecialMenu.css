@@ -39,3 +39,32 @@
 .app__specialmenu-content_button{
     margin-top: 2rem;
 }
+
+@media screen and (max-width:920px){
+    .app__specialmenu-content{
+        flex-direction: column;
+    }
+
+    .app__specialmenu-content_drinksMenu{
+        width: 100%;
+
+        flex: 1;
+        display: flex;
+        justify-content:flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+
+}
+
+@media screen and (max-width:768px){
+    .app__specialmenu-content_image img{
+        width: 100%;
+        height: auto;
+    }
+
+    .app__specialmenu-content_image{
+        margin-bottom: 4rem;
+    }
+}
