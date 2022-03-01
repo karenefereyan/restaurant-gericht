@@ -1,0 +1,19 @@
+.app__findUs-content h1{
+    margin-bottom: 3rem;
+}
+
+.app__findUs-content .opening-hours{
+    color: var(--color-golden);
+    font-family: var(--font-base);
+    font-size: 23px;
+    margin: 2.5rem 0;
+}
+
+.app__findUs-content .opening-hours_details p{
+    color: var(--color-white);
+    font-family: var(--font-alt);
+}
+
+.app__findUs-content .opening-hours_details p:nth-child(2){
+    margin: 1rem 0 2rem 0;
+}
